@@ -14,7 +14,7 @@ function is_get_request() {
 
 // Function 3
 function h($string="") {
-	return htmlspecialchars($string);
+	return htmlspecialchars($string, ENT_QUOTES);
 }
 
 // Function 4
@@ -36,6 +36,7 @@ function raw_u($string="") {
 function is_blank($value) {
 	return !isset($value) || trim($value) === '';
 }
+
 
 // Function 7
 // has_presence('abcd')
